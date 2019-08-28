@@ -1,0 +1,29 @@
+import pessoa
+
+#nome: input("")
+#cpf=int(input(""))
+#bairro=input("")
+a= True
+p=pessoa("joão",48941356806,"asasas",0)
+print(p)
+print("{}".format(p.nome))
+
+while(a==True):
+    a=int(input("Você deseja fazer qual ação?: /n 1 - fazer um deposito /n 2 - Consultar o saldo /n 3 - fazer saque /n 4 - Pedir imprestimo? /n "))
+
+    if (a==1):
+        p.deposito(500)
+
+        deposito=int(input('Você deseja fazer um deposito de quuanto?'))
+    elif (a==2):
+        print()
+    elif (a==3):
+        saque=int(input("Qual o valor do saque?"))
+    elif (a==4):
+        b=int(input("você deseja fazer um emprestimo de quanto?"))
+
+    p=input("")
+if(p=="ok"):
+    a=True
+elif(p==" "):
+    a=False
